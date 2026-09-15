@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StyleHub premium fashion and apparel store.">
+  <title>StyleHub — Premium Fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">FREE SHIPPING ON ORDERS OVER ₹2,999 <span>•</span> EASY 7-DAY RETURNS</div>
+
+  <header class="header">
+    <a class="logo" href="#home">STYLE<span>HUB</span></a>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search">⌕</button>
+      <button class="icon-btn" id="accountBtn" aria-label="Account">♙</button>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Cart">🛍<b id="cartCount">0</b></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <div class="search-bar" id="searchBar">
+    <input id="searchInput" type="search" placeholder="Search dresses, shirts, sneakers...">
+    <button id="searchClose">×</button>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">THE NEW SEASON / 2026</p>
+        <h1>Dress beyond<br><em>ordinary.</em></h1>
+        <p class="hero-text">Curated fashion for every version of you. Discover elevated essentials, statement pieces and timeless accessories.</p>
+        <a href="#shop" class="btn btn-dark">SHOP THE COLLECTION <span>→</span></a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=85" alt="Fashion model">
+        <div class="hero-tag">NEW<br><strong>ARRIVALS</strong></div>
+      </div>
+    </section>
+
+    <section class="categories section" id="collections">
+      <div class="section-heading">
+        <div><p class="eyebrow">SHOP BY STYLE</p><h2>Find your <em>fit.</em></h2></div>
+        <p>Looks designed to move with your lifestyle.</p>
+      </div>
+      <div class="category-grid">
+        <button class="category-card" data-category="Men">
+          <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=800&q=80" alt="Men's fashion">
+          <span>MEN <small>Explore collection →</small></span>
+        </button>
+        <button class="category-card" data-category="Women">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="Women's fashion">
+          <span>WOMEN <small>Explore collection →</small></span>
+        </button>
+        <button class="category-card" data-category="Kids">
+          <img src="https://images.unsplash.com/photo-1514090458221-65bb69cf63e6?auto=format&fit=crop&w=800&q=80" alt="Kids fashion">
+          <span>KIDS <small>Explore collection →</small></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">CURATED FOR YOU</p><h2>Trending <em>now.</em></h2></div>
+        <button class="text-btn" id="clearFilters">View all products →</button>
+      </div>
+
+      <div class="shop-tools">
+        <div class="filter-row">
+          <select id="categoryFilter"><option value="All">Category: All</option><option>Men</option><option>Women</option><option>Kids</option></select>
+          <select id="sizeFilter"><option value="All">Size: All</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>6-8Y</option><option>8-10Y</option><option>10-12Y</option></select>
+          <select id="colorFilter"><option value="All">Color: All</option><option>Black</option><option>White</option><option>Pink</option><option>Blue</option><option>Beige</option><option>Brown</option></select>
+          <select id="sortFilter"><option value="featured">Sort: Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="rating">Top Rated</option></select>
+        </div>
+        <div class="search-mini"><input id="productSearch" type="search" placeholder="Search products..."> 🔎</div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="offer-banner">
+      <div><p class="eyebrow">LIMITED SEASONAL OFFER</p><h2>Make room for<br><em>something new.</em></h2></div>
+      <div class="offer-right"><strong>20% OFF</strong><span>YOUR FIRST ORDER</span><button class="btn btn-light" id="copyCoupon">USE CODE: STYLE20</button></div>
+    </section>
+
+    <section class="story section" id="about">
+      <div class="story-image"><img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1000&q=85" alt="StyleHub clothing rack"></div>
+      <div class="story-copy"><p class="eyebrow">OUR STORY</p><h2>Fashion with<br><em>intention.</em></h2><p>StyleHub was built for people who see clothing as an extension of identity. We combine contemporary design, premium materials and thoughtful details to create pieces you will want to wear again and again.</p><p>From responsible sourcing to timeless silhouettes, every collection is designed with a lighter footprint and a longer life in mind.</p><a href="#contact" class="text-btn">Discover our story →</a></div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">JOIN THE CLUB</p><h2>Good style looks better<br>in your inbox.</h2>
+      <form id="newsletterForm"><input type="email" required placeholder="Your email address"><button class="btn btn-dark">SUBSCRIBE</button></form>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div><p class="eyebrow">COME SAY HELLO</p><h2>Visit <em>StyleHub.</em></h2><p>Mon–Sat · 10:00 AM–8:00 PM<br>Jaipur Fashion District<br>+91 98765 43210</p></div>
+      <div class="contact-box"><h3>Have a question?</h3><form id="contactForm"><input required placeholder="Your name"><input required type="email" placeholder="Email address"><textarea required rows="4" placeholder="How can we help?"></textarea><button class="btn btn-dark">SEND MESSAGE</button></form></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-top"><a class="logo" href="#home">STYLE<span>HUB</span></a><div><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#">Instagram</a></div><p>© 2026 StyleHub. All rights reserved.</p></div></footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="drawer" id="cartDrawer">
+    <div class="drawer-head"><h2>Your bag</h2><button class="close-btn" data-close>×</button></div>
+    <div id="cartItems"></div>
+    <div class="cart-summary"><div><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div><small>Shipping and taxes calculated at checkout.</small><button class="btn btn-dark full" id="checkoutBtn">CHECKOUT →</button></div>
+  </aside>
+
+  <aside class="drawer account-drawer" id="accountDrawer">
+    <div class="drawer-head"><h2>My StyleHub</h2><button class="close-btn" data-close>×</button></div>
+    <div class="account-tabs"><button class="active" data-tab="login">Login</button><button data-tab="register">Register</button></div>
+    <form id="authForm" class="auth-form"><input id="authName" placeholder="Full name"><input id="authEmail" required type="email" placeholder="Email address"><input required type="password" placeholder="Password"><button class="btn btn-dark full">CONTINUE</button></form>
+    <div class="account-features"><div>♡ <span><strong>Wishlist</strong><small>Save your favorites</small></span></div><div>↻ <span><strong>Order history</strong><small>Track every purchase</small></span></div><div>⌖ <span><strong>Saved addresses</strong><small>Faster checkout</small></span></div></div>
+  </aside>
+
+  <div class="modal" id="productModal"><div class="modal-card"><button class="close-btn" data-close>×</button><div id="productDetail"></div></div></div>
+
+  <div class="modal" id="checkoutModal"><div class="modal-card checkout-card"><button class="close-btn" data-close>×</button><p class="eyebrow">SECURE CHECKOUT</p><h2>Complete your <em>order.</em></h2><form id="checkoutForm"><div class="two"><input required placeholder="First name"><input required placeholder="Last name"></div><input required placeholder="Address"><div class="two"><input required placeholder="City"><input required placeholder="PIN code"></div><input required type="tel" placeholder="Phone number"><select required><option value="">Payment method</option><option>Cash on Delivery</option><option>UPI</option><option>Credit / Debit Card</option></select><div class="coupon"><input id="couponInput" placeholder="Coupon code"><button type="button" id="applyCoupon">APPLY</button></div><div class="checkout-total"><span>Total</span><strong id="checkoutTotal">₹0</strong></div><button class="btn btn-dark full">PLACE ORDER</button></form></div></div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
