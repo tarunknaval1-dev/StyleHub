@@ -48,4 +48,4 @@ For VS Code, install the **Live Server** extension and open `index.html` with Li
 - [ ] YouTube public/unlisted link
 - [ ] Live deployment link
 
-> Product and fashion images are loaded from Unsplash URLs, so an internet connection is recommended for the full visual experience.
+
