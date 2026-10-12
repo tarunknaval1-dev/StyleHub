@@ -39,13 +39,5 @@ For VS Code, install the **Live Server** extension and open `index.html` with Li
 ## Demo coupon
 `STYLE20`
 
-## Internship submission checklist
-- [ ] Public GitHub repository
-- [ ] Proper commits
-- [ ] Desktop + mobile screenshots
-- [ ] 1–2 page project report
-- [ ] 3–5 minute demo video
-- [ ] YouTube public/unlisted link
-- [ ] Live deployment link
 
 
