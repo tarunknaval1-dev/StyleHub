@@ -5,7 +5,7 @@ A responsive frontend-only fashion e-commerce website built with **HTML5, CSS3 a
 ## Features
 - Premium fashion landing page
 - Men / Women / Kids category browsing
-- Product listing with category, size and color filters
+- Product listing with category, size, fabric  and color filters
 - Product search and sorting
 - Product detail modal with size selection
 - Shopping cart with quantity controls
