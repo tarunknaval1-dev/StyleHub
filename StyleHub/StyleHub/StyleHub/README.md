@@ -10,7 +10,7 @@ A responsive frontend-only fashion e-commerce website built with **HTML5, CSS3 a
 - Product detail modal with size selection
 - Shopping cart with quantity controls
 - Wishlist stored in localStorage
-- Coupon code `STYLE20` for 20% off
+- Coupon code `STYLE30` for 30% off
 - Simulated login/register
 - Checkout form and simulated order placement
 - Newsletter/contact forms
