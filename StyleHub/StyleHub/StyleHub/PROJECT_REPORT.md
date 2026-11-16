@@ -23,4 +23,4 @@ This project provides practical experience with semantic HTML, CSS Grid/Flexbox,
 The main challenges were maintaining a consistent responsive layout, connecting product data to reusable UI components, handling cart variants and keeping the interface usable on smaller screens.
 
 ## 7. Future Improvements
-A production version could add a real backend, database, secure authentication, payment gateway, admin dashboard, inventory management and a real order tracking API..
+A production version could add a real backend, database, secure authentication, payment gateway, admin dashboard, inventory management, return option and a real order tracking API..
